@@ -44,15 +44,10 @@ rep()
  
 def repeat():
         while True:
-            try:
-              repeat = int(input("1 = Yes, 2 - No \nRepeat the program?: "))
-              if repeat == 1:
+              repeat = input("Repeat the program? (Y/N): ")
+              if repeat == "Y":
                rep()
-              if repeat == 2:
+              if repeat == "N":
                break
-              if not repeat == 1 or 2:
-                  print("INVALID! Please type 1 or 2.")
-            except ValueError:
-                print("INVALID! Please type 1 or 2.")
             
 repeat()
