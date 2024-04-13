@@ -44,7 +44,7 @@ rep()
  
 def repeat():
         while True:
-              repeat = input("Repeat the program? (Y/N): ")
+              repeat = input("TYPE Y/N - Repeat the program?: ")
               if repeat == "Y":
                rep()
               if repeat == "N":
